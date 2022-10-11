@@ -1,13 +1,15 @@
-# orbslam3-docker
+# orbslam2-docker
 
-> Ref: https://github.com/jahaniam/orbslam3_docker
+> Ref: https://github.com/proudh/docker-orb-slam2-build/blob/master/Dockerfile
+>
+> https://github.com/jahaniam/orbslam3_docker
 
 ## How to use
 
-The image was upload to docker hub: https://hub.docker.com/repository/docker/jike5/orbslam3
+The image was upload to docker hub: https://hub.docker.com/repository/docker/jike5/orbslam2
 
 ```
-docker image pull jike5/orbslam3
+docker image pull jike5/orbslam2
 ```
 
 To use the image with display window, you use the script:

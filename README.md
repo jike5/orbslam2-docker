@@ -53,7 +53,7 @@ cd /workspace/ORB_SLAM2
 To run rgbd mode:
 
 ```
-
+./Examples/RGB-D/rgbd_tum /workspace/ORB_SLAM2/Vocabulary/ORBvoc.txt /workspace/ORB_SLAM2/Examples/RGB-D/TUM1.yaml /workspace/data/rgbd_dataset_freiburg1_desk /workspace/ORB_SLAM2/Examples/RGB-D/associations/fr1_desk.txt
 ```
 
 

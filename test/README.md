@@ -10,6 +10,8 @@ The metrics include cpu use rate and rmse
 
 To calculate cpu and memory use rate:
 
+ref: https://blog.csdn.net/shenyuflying/article/details/53244944
+
 ```
 ./monitor.sh
 # Plot figure

@@ -64,6 +64,8 @@ run fr3_office:
 ./Examples/RGB-D/rgbd_tum /workspace/ORB_SLAM2/Vocabulary/ORBvoc.txt /workspace/ORB_SLAM2/Examples/RGB-D/TUM3.yaml /workspace/data/rgbd_dataset_freiburg3_long_office_household /workspace/ORB_SLAM2/Examples/RGB-D/associations/fr3_office.txt
 ```
 
+
+
 ## Build your own image
 
 Firstly, to use the image base, you can pull it form dockerhub:
@@ -100,4 +102,10 @@ docker image build -t [name]:[version] .
 > # remeber replace you own proxy ports
 > docker build . -t jike5/orbslam2-dev -f docker/orbslam2-dev/Dockerfile --build-arg HTTP_PROXY=http://127.0.0.1:58591 --build-arg HTTPS_PROXY=http://127.0.0.1:58591 --build-arg ALL_PROXY=socks5://127.0.0.1:51837 --network host
 > ```
+
+Build the edgeslam image:
+
+```
+docker build . -t jike5/edgeslam-run -f docker/edgeslam-run/Dockerfile --network host
+```
 

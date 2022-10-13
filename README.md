@@ -52,11 +52,17 @@ cd /workspace/ORB_SLAM2
 
 To run rgbd mode:
 
+run fr2_desk:
+
 ```
-./Examples/RGB-D/rgbd_tum /workspace/ORB_SLAM2/Vocabulary/ORBvoc.txt /workspace/ORB_SLAM2/Examples/RGB-D/TUM1.yaml /workspace/data/rgbd_dataset_freiburg1_desk /workspace/ORB_SLAM2/Examples/RGB-D/associations/fr1_desk.txt
+./Examples/RGB-D/rgbd_tum /workspace/ORB_SLAM2/Vocabulary/ORBvoc.txt /workspace/ORB_SLAM2/Examples/RGB-D/TUM2.yaml /workspace/data/rgbd_dataset_freiburg2_desk /workspace/ORB_SLAM2/Examples/RGB-D/associations/fr2_desk.txt
 ```
 
+run fr3_office:
 
+```
+./Examples/RGB-D/rgbd_tum /workspace/ORB_SLAM2/Vocabulary/ORBvoc.txt /workspace/ORB_SLAM2/Examples/RGB-D/TUM3.yaml /workspace/data/rgbd_dataset_freiburg3_long_office_household /workspace/ORB_SLAM2/Examples/RGB-D/associations/fr3_office.txt
+```
 
 ## Build your own image
 

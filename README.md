@@ -50,6 +50,15 @@ cd /workspace/ORB_SLAM2
 ./build_ros.sh
 ```
 
+To run ros rgbd mode:
+
+```
+source Examples/ROS/ORB_SLAM2/build/devel/setup.bash
+roslaunch ORB_SLAM2 rgbd.launch
+```
+
+
+
 ## Build your own image
 
 Firstly, to use the image base, you can pull it form dockerhub:

@@ -6,10 +6,7 @@ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 
 xhost +local:docker
 
-docker pull jike5/orbslam2-dev:latest
-
-# Remove existing container
-docker rm -f /orbslam2 &>/dev/null
+# docker pull jike5/orbslam2-dev:latest
 
 # Create a new container
 docker run -td --privileged --net=host --ipc=host \
@@ -21,6 +18,5 @@ docker run -td --privileged --net=host --ipc=host \
     -e ROS_IP=127.0.0.1 \
     --cap-add=SYS_PTRACE \
     -v `pwd`/workspace:/workspace \
-    -v /etc/group:/etc/group:ro \
     jike5/orbslam2-dev:latest bash
-    
+

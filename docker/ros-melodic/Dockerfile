@@ -51,11 +51,12 @@ RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
+ENV ROS_DISTRO melodic
 
 # Terminator Config
 RUN mkdir -p /root/.config/terminator/
-COPY assets/terminator_config /root/.config/terminator/config 
-COPY assets/terminator_background.png /root/.config/terminator/background.png
+COPY docker/ros-melodic/terminator_config /root/.config/terminator/config 
+COPY docker/ros-melodic/terminator_background.png /root/.config/terminator/background.png
 
 # Install ROS
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -76,7 +77,7 @@ RUN echo "source /opt/ros/melodic/setup.bash" >> /root/.bashrc
 RUN echo "export ROSLAUNCH_SSH_UNKNOWN=1" >> /root/.bashrc
 
 # Entry script - This will also run terminator
-COPY assets/entrypoint_setup.sh /
+COPY docker/ros-melodic/entrypoint_setup.sh /
 ENTRYPOINT ["/entrypoint_setup.sh"]
 
 # ---

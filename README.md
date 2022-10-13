@@ -50,11 +50,10 @@ cd /workspace/ORB_SLAM2
 ./build_ros.sh
 ```
 
-To run ros rgbd mode:
+To run rgbd mode:
 
 ```
-source Examples/ROS/ORB_SLAM2/build/devel/setup.bash
-roslaunch ORB_SLAM2 rgbd.launch
+
 ```
 
 

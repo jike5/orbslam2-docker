@@ -27,7 +27,7 @@ plot 'monitor.log' using 1:3 with linespoints linestyle 1
 iptraf
 ```
 
-
+**orbslam2:**
 
 fr2_desk ape:
 
@@ -57,3 +57,32 @@ fr3_office ape:
        std	0.007821
 ```
 
+
+
+**docker:**
+
+fr2:
+
+```
+       max	0.202608
+      mean	0.109464
+    median	0.112553
+       min	0.000000
+      rmse	0.122358
+       sse	32.548056
+       std	0.054673
+```
+
+fr3
+
+```
+       max	0.097566
+      mean	0.040188
+    median	0.040471
+       min	0.000000
+      rmse	0.042967
+       sse	4.589586
+       std	0.015201
+```
+
+**kubeedge:**

@@ -123,13 +123,24 @@ server:
 ./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml server websocket
 ```
 
-
+fr2:
 
 ```
-./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml client websocket  /workspace/data/rgbd_dataset_freiburg2_desk /workspace/edgeslam/Examples/RGB-D/associations/fr2_desk.txt
+./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM2.yaml client websocket  /workspace/data/rgbd_dataset_freiburg2_desk /workspace/edgeslam/Examples/RGB-D/associations/fr2_desk.txt
 ```
 
 ```
 roslaunch Edge_SLAM  cloud.launch
 ```
 
+fr3:
+
+```
+roslaunch Edge_SLAM cloud.launch tum_name:=TUM3
+```
+
+```
+./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml client websocket  /workspace/data/rgbd_dataset_freiburg3_long_office_household /workspace/edgeslam/Examples/RGB-D/associations/fr3_office.txt 
+```
+
+the CameraTrajectory.txt was save in your terminal floder

@@ -109,3 +109,27 @@ Build the edgeslam image:
 docker build . -t jike5/edgeslam-run -f docker/edgeslam-run/Dockerfile --network host
 ```
 
+run edge using tcp socket:
+
+client:
+
+```
+./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml client websocket  /workspace/data/rgbd_dataset_freiburg3_long_office_household /workspace/edgeslam/Examples/RGB-D/associations/fr3_office.txt
+```
+
+server:
+
+```
+./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml server websocket
+```
+
+
+
+```
+./RGB-D/rgbd_tum /workspace/edgeslam/Vocabulary/ORBvoc.txt /workspace/edgeslam/Examples/RGB-D/TUM3.yaml client websocket  /workspace/data/rgbd_dataset_freiburg2_desk /workspace/edgeslam/Examples/RGB-D/associations/fr2_desk.txt
+```
+
+```
+roslaunch Edge_SLAM  cloud.launch
+```
+
